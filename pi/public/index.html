@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Raspberry Pi Socket.io Express Xbee Arduino</title>
+    <style>
+        .button {
+            padding: 10px 20px;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            background-color: #7a7895;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {background-color: #758375}
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+    </style>
+</head>
+
+<body>
+    <button class='button' id='lamp' onclick="toggleLamp()"></button>
+    <script src="js/socket.io.js"></script>
+    <script>
+        var socket = io();
+        socket.on('updateClient', data => {
+            var lamp = document.getElementById("lamp");
+
+            (data.office.DIO0==0?(lamp.innerHTML ="Lamp Off",lamp.style.color='#fff'):
+                (lamp.innerHTML ="Lamp On",lamp.style.color='#ffff00'));
+        });
+        function toggleLamp(){
+            socket.emit('updateServer', 7);
+        }
+    </script>
+</body>
+
+</html>

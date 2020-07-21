@@ -4,7 +4,8 @@
   "description": "Raspberry <=> Arduino Using Xbee Serial Communitation. Express and Socket.io",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "prichardsondev",

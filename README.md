@@ -35,7 +35,7 @@
 >
 
 ## Remote Arduino Xbee Setup
-![](/images/arduinoxbee.png)
+![](/images/xbeeRouterSettings.png)
 
 
 ## Video Overview

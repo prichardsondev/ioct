@@ -26,7 +26,7 @@
 
 > nginx.com can be used as a reverse proxy listening on 80 and forwarding to port your app is running on (3000 in this example)
 
-> dataplicity.io or balena.io can be use to expose port 80 to the world - I use/like both. dataplicity is quicker to get up and running
+> dataplicity.io or balena.io can be use to expose port 80 to the world - I use/like both. dataplicity is quicker to get up and running. https://docs.dataplicity.com/docs/host-a-website-from-your-pi
 
 ## Video Overview
 https://youtu.be/XPlWHEoMwRo

@@ -79,6 +79,8 @@ xbeeAPI.parser.on("data", function (frame) {
                     io.sockets.emit('updateClient', pinState);
                   }
             }
+
+            
         }
     }
 });

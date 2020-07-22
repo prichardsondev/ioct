@@ -14,7 +14,9 @@
   </a>
 </p>
 
-> Raspberry <-> Arduino Communication with Xbee radios. App structure: expressjs.com & socket.io
+## Description
+
+> Raspberry <-> Arduino Communication with Xbee radios. Server and client running locally on Raspberry Pi. No internet necessary for local control.
 
 > express.com - serve html page with single button to toggle pin on arduino
 
@@ -26,7 +28,15 @@
 
 > dataplicity.io or balena.io can be use to expose port 80 to the world - I use/like both. dataplicity is quicker to get up and running
 
->
+## Xbee Radios - Router setting beyond basic Coordinator / Router 
+![](/images/xbeeRouterSettings.png)
+
+## Remote Arduino Xbee Setup
+![](/images/arduinoxbee.png)
+
+
+## Video Overview
+https://youtu.be/XPlWHEoMwRo
 
 >
 
@@ -44,6 +54,7 @@ npm install
 
 ```sh
 npm start
+browse to localhost:3000
 ```
 
 ## Run tests

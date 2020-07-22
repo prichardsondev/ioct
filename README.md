@@ -16,20 +16,20 @@
 
 ## Description
 
-> Raspberry <-> Arduino Communication with Xbee radios. Server and client running locally on Raspberry Pi. No internet necessary for local control.
+> Raspberry <-> Arduino Communication with Xbee radios. Server and client running locally on Raspberry Pi - no internet necessary for local control.
 
 > express.com - serve html page with single button to toggle pin on arduino
 
 > socket.io - messages between server (app.js) and client (index.html). Keeps all versions of client insync with state of backend (in memory js object). Is the pin on the arduino high or low (relay/reed open or closed).
 
-> serialport.io & npm xbee-api  - listen for state of remote xbee radios - fires socket.io.emit to inform clients. Also sends state change from client (button click) to remote xbee radios to toggle arduino pins
+> serialport.io & npm xbee-api  - listen for state of remote xbee radios - fires socket.io.emit to inform clients. Also sends state change from client (button click) to backend then to remote xbee radios to toggle arduino pins
 
 > nginx.com can be used as a reverse proxy listening on 80 and forwarding to port your app is running on (3000 in this example)
 
 > dataplicity.io or balena.io can be use to expose port 80 to the world - I use/like both. dataplicity is quicker to get up and running
 
 ## Xbee Radios
-### Setting beyond basic coordinator <-> router setup
+### Router radio settings beyond basic coordinator <-> router setup
 ![](/images/xbeeRouterSettings.png)
 
 >

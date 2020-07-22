@@ -28,8 +28,11 @@
 
 > dataplicity.io or balena.io can be use to expose port 80 to the world - I use/like both. dataplicity is quicker to get up and running
 
+## Video Overview
+https://youtu.be/XPlWHEoMwRo
+
 ## Xbee Radios
-### Router radio settings beyond basic coordinator <-> router setup
+### See this link to set up your radios in api mode. Then just add the two settings in pic to your router. https://www.youtube.com/watch?v=AemzSO5EDy0
 ![](/images/xbeeRouterSettings.png)
 
 >
@@ -38,8 +41,9 @@
 ![](/images/arduinoxbee.PNG)
 
 
-## Video Overview
-https://youtu.be/XPlWHEoMwRo
+## Install nodejs on your Raspberry Pi
+
+https://thisdavej.com/beginners-guide-to-installing-node-js-on-a-raspberry-pi/
 
 >
 

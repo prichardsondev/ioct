@@ -31,6 +31,7 @@
 ## Xbee Radios - Router setting beyond basic Coordinator / Router 
 ![](/images/xbeeRouterSettings.png)
 
+
 ## Remote Arduino Xbee Setup
 ![](/images/arduinoxbee.png)
 

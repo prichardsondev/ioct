@@ -28,11 +28,14 @@
 
 > dataplicity.io or balena.io can be use to expose port 80 to the world - I use/like both. dataplicity is quicker to get up and running
 
-## Xbee Radios - Router setting beyond basic Coordinator / Router 
+## Xbee Radios
+### Setting beyond basic coordinator <-> router setup
 ![](/images/xbeeRouterSettings.png)
 
+>
+
 ## Remote Arduino Xbee Setup
-![](/images/arduinoxbee.png)
+![](/images/arduinoxbee.PNG)
 
 
 ## Video Overview

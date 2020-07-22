@@ -22,7 +22,7 @@
 
 > socket.io - messages between server (app.js) and client (index.html). Keeps all versions of client insync with state of backend (in memory js object). Is the pin on the arduino high or low (relay/reed open or closed).
 
-> serialport.io & npm xbee-api  - listen for state of remote xbee radios - fires socket.io.emit to inform clients. Also sends state change from client (button click) to backend then to remote xbee radios to toggle arduino pins
+> serialport.io & npm xbee-api  - listen for state of remote xbee radios - fires socket.io.emit to inform clients. Also sends state change request to remote radio.
 
 > nginx.com can be used as a reverse proxy listening on 80 and forwarding to port your app is running on (3000 in this example)
 

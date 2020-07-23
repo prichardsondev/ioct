@@ -29,7 +29,7 @@
 > dataplicity.io or balena.io can be use to expose port 80 to the world - I use/like both. dataplicity is quicker to get up and running. https://docs.dataplicity.com/docs/host-a-website-from-your-pi
 
 ## Video Overview
-https://youtu.be/XPlWHEoMwRo
+https://www.youtube.com/watch?v=LgwM6YWz_Fw&t=23s
 
 ## Xbee Radios
 ### See this link to set up your radios in api mode. Then just add the two settings in pic to your router. https://www.youtube.com/watch?v=LgwM6YWz_Fw

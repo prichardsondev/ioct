@@ -16,7 +16,7 @@
 
 ## Description
 
-> Raspberry <-> Arduino Communication with Xbee radios. Server and client running locally on Raspberry Pi - no internet necessary for local control.
+> Raspberry Pi <-> Arduino Communication with Xbee radios. Server and client running locally on Raspberry Pi - no internet necessary for local control.
 
 > express.com - serve html page with single button to toggle pin on arduino
 
@@ -32,7 +32,7 @@
 https://youtu.be/XPlWHEoMwRo
 
 ## Xbee Radios
-### See this link to set up your radios in api mode. Then just add the two settings in pic to your router. https://www.youtube.com/watch?v=AemzSO5EDy0
+### See this link to set up your radios in api mode. Then just add the two settings in pic to your router. https://www.youtube.com/watch?v=LgwM6YWz_Fw
 ![](/images/xbeeRouterSettings.png)
 
 >

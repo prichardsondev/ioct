@@ -29,7 +29,13 @@
 
 <body>
     <button class='button' id='lamp' onclick="toggleLamp()"></button>
+    </p>
+    <form action="">
+        <input id="neo" autocomplete="off" /><button>Send</button>
+    </form>
+
     <script src="js/socket.io.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script>
         var socket = io();
         socket.on('updateClient', data => {
@@ -38,9 +44,20 @@
             (data.office.DIO0==0?(lamp.innerHTML ="Lamp Off",lamp.style.color='#fff'):
                 (lamp.innerHTML ="Lamp On",lamp.style.color='#ffff00'));
         });
+
         function toggleLamp(){
             socket.emit('updateServer', 7);
         }
+
+        $(function () {
+            var socket = io();
+            $('form').submit(function(e) {
+            e.preventDefault(); // prevents page reloading
+            socket.emit('updateneo', $('#neo').val());
+            $('#neo').val('');
+            return false;
+        });
+  });
     </script>
 </body>
 

@@ -15,13 +15,6 @@ app.get('/', (req, res) => {
   res.sendFile('index.html');
 });
 
-/*
-    pin mapping
-    arduino    xbee
-       7       DIO0
-       8       DIO1
-*/
-
 io.on('connection', (socket) => {
     //send (just to new client)
     socket.emit('updateClient', pinState)
@@ -79,8 +72,6 @@ xbeeAPI.parser.on("data", function (frame) {
                     io.sockets.emit('updateClient', pinState);
                   }
             }
-
-            
         }
     }
 });

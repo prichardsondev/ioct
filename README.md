@@ -16,11 +16,19 @@
 
 ## Description
 
-> Raspberry Pi <-> Arduino Communication with Xbee radios. Server and client running locally on Raspberry Pi - no internet necessary for local control.
+> Raspberry Pi IoT Server using Express an Sockeio to control and view state.
 
-> express.com - serve html page with single button to toggle pin on arduino
+> Three basic parts  
 
-> socket.io - messages between server (app.js) and client (index.html). Keeps all versions of client insync with state of backend (in memory js object). Is the pin on the arduino high or low (relay/reed open or closed).
+ >>app.js and index.html - Raspberry Pi/Arduino Communication via Xbee radios to toggle remote arduino pin 
+
+ >>app1.js and index1.html - Raspberry Pi/Arduino Communication via Xbee radios to set state of Neopixel (RGB LED)  
+
+ >>app2.js and index2.html - Raspberry Pi communication with relay switch directly connected to Pi... Add xbee radios or similar to put distance between Pi and remote modules
+
+> expressjs.com - serve html page to control/view state
+
+> socket.io - messages between server (app.js) and client (index.html). Keeps all versions of client insync with state of backend (in memory js object). Is the pin on the arduino high or low (relay, reed, anything open or closed).
 
 > serialport.io & npm xbee-api  - listen for state of remote xbee radios - fires socket.io.emit to inform clients. Also sends state change request to remote radio.
 

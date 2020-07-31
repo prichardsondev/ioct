@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Raspberry Pi Socket.io Express Relay Switch</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        .button {
+            padding: 5px 10px;
+            font-size: 10px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            background-color: #7a7895;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {
+            background-color: #758375
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class='button' id='toggle' onclick="toggle()"></button>
+    </p>
+    <table>
+        <tr>
+            <th>Normally On</th>
+            <th>Always On</th>
+        </tr>
+        <tr>
+            <td id='o1'></td>
+            <td id='o2'></td>
+        </tr>
+        <tr>
+            <th>Normally Off</th>
+            <th>Normally Off</th>
+        </tr>
+        <tr>
+            <!-- Normally Off -->
+            <td id='o3'></td>
+            <!-- Normally Off -->
+            <td id='o4'></td>
+        </tr>
+    </table>
+
+    <script src="js/socket.io.js"></script>
+
+    <script>
+        var socket = io();
+        socket.on('updateClient', data => {
+
+            document.getElementById("toggle").innerHTML = "Pin 17: " + data;
+            document.getElementById("o1").innerHTML = data==0?'On':'Off';
+            document.getElementById("o2").innerHTML = 'On';
+            document.getElementById("o3").innerHTML = data==0?'Off':'On';
+            document.getElementById("o4").innerHTML = data==0?'Off':'On';
+
+        });
+
+        function toggle() {
+            socket.emit('updateServer', 7);
+        }
+
+    </script>
+</body>
+
+</html>

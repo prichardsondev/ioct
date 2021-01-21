@@ -15,7 +15,7 @@
     "express": "^4.17.1",
     "jquery": "^3.5.1",
     "serialport": "^9.0.0",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.4.0",
     "xbee-api": "^0.6.0"
   },
   "repository": {

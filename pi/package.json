@@ -12,7 +12,6 @@
   "author": "prichardsondev",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
     "jquery": "^3.5.1",
     "serialport": "^9.0.0",
     "socket.io": "^2.3.0",
